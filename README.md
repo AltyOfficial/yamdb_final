@@ -1,4 +1,4 @@
-# API для проекта Yamdb ![Workflow Badge](https://github.com/Arkellain/yamdb_final/.github/workflows/yamdb_workflow.yml/badge.svg)
+# API для проекта Yamdb ![Workflow Badge](https://github.com/Arkellain/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 Проект позволяет обращаться к базе данных и получать данные в формате JSON
 
