@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.http import HttpResponse
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
@@ -20,6 +21,10 @@ from .serializers import (CategorySerializer, CommentSerializer,
 from .utils import send_code
 
 User = get_user_model()
+
+
+def index(request):
+    return HttpResponse('У меня получилось!')
 
 
 class CreateDestroyListViewSet(

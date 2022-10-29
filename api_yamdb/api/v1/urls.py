@@ -2,8 +2,8 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from .views import (CategoryViewSet, CommentViewSet, GenreViewSet,
-                    ReviewViewSet, TitleViewSet, UserViewSet, obtain_token,
-                    send_confirmation_code)
+                    ReviewViewSet, TitleViewSet, UserViewSet, index,
+                    obtain_token, send_confirmation_code)
 
 router = DefaultRouter()
 router.register('users', UserViewSet, basename='users')
@@ -22,6 +22,7 @@ router.register(
 )
 
 urlpatterns = [
+    path('privet/', index, name='index'),
     path('auth/signup/', send_confirmation_code, name='signup'),
     path('auth/token/', obtain_token, name='token'),
     path('', include(router.urls)),
