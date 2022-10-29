@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
-from django.http import HttpResponse
 from django.db.models import Avg
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, mixins, status, viewsets
