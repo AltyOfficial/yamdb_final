@@ -1,5 +1,7 @@
 # API для проекта Yamdb ![Workflow Badge](https://github.com/Arkellain/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+## Проект расположен по адресу http://178.154.221.106/
+
 Проект позволяет обращаться к базе данных и получать данные в формате JSON
 
 ## Следует создать и заполнить файл .env, находящийся в директории "/infra/"
